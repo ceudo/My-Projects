@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.ArrayList;
 import java.util.Arrays;
-public class Game{
+public class Game_coin{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.println("Hey, what is your name?");
