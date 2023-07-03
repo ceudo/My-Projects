@@ -1,4 +1,4 @@
-/*Game: Scissors, paper, stone */
+/*Game: Scissors, paper, rock */
 import java.util.Scanner;
 import java.util.Random;
 public class Game_RPS{
@@ -12,7 +12,7 @@ public class Game_RPS{
         String capital_name= user_name1+user_name2;
         int count=1;
         while(count!=0){
-            System.out.println("Hi "+ capital_name +", do you want to play a game of scissors, paper, stone?");
+            System.out.println("Hi "+ capital_name +", do you want to play a game of scissors, paper, rock?");
             String user_reply=sc.nextLine();
             switch(user_reply.toLowerCase()){
             case "yes" -> {
@@ -33,7 +33,7 @@ public class Game_RPS{
             System.out.println("Enter your move: ");
             String user_move=sc.nextLine().toLowerCase();
             Random game=new Random();
-            String[] move= { "scissors","paper","stone"};
+            String[] move= { "scissors","paper","rock"};
             int size=move.length;
             int random=game.nextInt(size);
             String computer_move=move[random];
@@ -46,13 +46,13 @@ public class Game_RPS{
                     System.out.println("You win!");
                     break;
                 }
-                else if(computer_move.equals("stone")){
+                else if(computer_move.equals("rock")){
                     System.out.println("You lose!");
                     break;
                 }
             }
             else if(user_move.equals("paper")){
-                if(computer_move.equals("stone")){
+                if(computer_move.equals("rock")){
                     System.out.println("You win!");
                     break;
                 }
@@ -61,7 +61,7 @@ public class Game_RPS{
                     break;
                 }
             }
-            else if(user_move.equals("stone")){
+            else if(user_move.equals("rock")){
                 if(computer_move.equals("scissors")){
                     System.out.println("You win!");
                     break;
