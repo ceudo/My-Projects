@@ -30,7 +30,7 @@ class Calculator extends JFrame{
         JTextField sign=new JTextField();
         JTextField input2=new JTextField();
         JTextField output=new JTextField();
-        JTextField clicked=new JTextField();
+        JTextField clicked=new JTextField("input1");
         input1.setBounds(15,50,100,100);
         sign.setBounds(120,75,50,50);
         input2.setBounds(175,50,100,100);
@@ -38,7 +38,7 @@ class Calculator extends JFrame{
         clicked.setBounds(15,15,100,20);
         clicked.setEditable(false);
         clicked.setVisible(false);
-        output.setEditable(false);
+        output.setEditable(true);
         add(input1);
         add(sign);
         add(input2);
@@ -71,23 +71,23 @@ class Calculator extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e){
                 if("      +".equals(sign.getText())){
-                    float value=Float.parseFloat(input1.getText())+Float.parseFloat(input2.getText());
+                    double value=Double.parseDouble(input1.getText())+Double.parseDouble(input2.getText());
                     output.setText(String.valueOf(value));
                 }
                 if("      -".equals(sign.getText())){
-                    float value=Float.parseFloat(input1.getText())-Float.parseFloat(input2.getText());
+                    double value=Double.parseDouble(input1.getText())-Double.parseDouble(input2.getText());
                     output.setText(String.valueOf(value));
                 }
                 if("      X".equals(sign.getText())){
-                    float value=Float.parseFloat(input1.getText())*Float.parseFloat(input2.getText());
+                    double value=Double.parseDouble(input1.getText())*Double.parseDouble(input2.getText());
                     output.setText(String.valueOf(value));
                 }
                 if("      /".equals(sign.getText())){
-                    if(Float.parseFloat(input2.getText())==0){
+                    if(Double.parseDouble(input2.getText())==0){
                         output.setText("Error");
                     }
                     else{
-                       float value=Float.parseFloat(input1.getText())/Float.parseFloat(input2.getText());
+                       double value=Double.parseDouble(input1.getText())/Double.parseDouble(input2.getText());
                         output.setText(String.valueOf(value)); 
                     }
                 }
