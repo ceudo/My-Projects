@@ -133,70 +133,70 @@ public:
 		else if (board[1][0] == board[1][1] && board[1][1] == board[1][2]) {
 			winner = board[1][0];
 			if (winner == p1sign) {
-				cout << "The winner is Player 2";
+				cout << "The winner is Player 1";
 			}
 			else {
-				cout << "The winner is Player 1";
+				cout << "The winner is Player 2";
 			}
 			exit(0);
 		}
 		else if (board[2][0] == board[2][1] && board[2][1] == board[2][2]) {
 			winner = board[2][0];
 			if (winner == p1sign) {
-				cout << "The winner is Player 2";
+				cout << "The winner is Player 1";
 			}
 			else {
-				cout << "The winner is Player 1";
+				cout << "The winner is Player 2";
 			}
 			exit(0);
 		}
 		else if (board[0][0] == board[1][0] && board[1][0] == board[2][0]) {
 			winner = board[0][0];
 			if (winner == p1sign) {
-				cout << "The winner is Player 2";
+				cout << "The winner is Player 1";
 			}
 			else {
-				cout << "The winner is Player 1";
+				cout << "The winner is Player 2";
 			}
 			exit(0);
 		}
 		else if (board[0][1] == board[1][1] && board[1][1] == board[2][1]) {
 			winner = board[0][1];
 			if (winner == p1sign) {
-				cout << "The winner is Player 2";
+				cout << "The winner is Player 1";
 			}
 			else {
-				cout << "The winner is Player 1";
+				cout << "The winner is Player 2";
 			}
 			exit(0);
 		}
 		else if (board[0][2] == board[1][2] && board[1][2] == board[2][2]) {
 			winner = board[0][2];
 			if (winner == p1sign) {
-				cout << "The winner is Player 2";
+				cout << "The winner is Player 1";
 			}
 			else {
-				cout << "The winner is Player 1";
+				cout << "The winner is Player 2";
 			}
 			exit(0);
 		}
 		else if (board[0][0] == board[1][1] && board[1][1] == board[2][2]) {
 			winner = board[0][0];
 			if (winner == p1sign) {
-				cout << "The winner is Player 2";
+				cout << "The winner is Player 1";
 			}
 			else {
-				cout << "The winner is Player 1";
+				cout << "The winner is Player 2";
 			}
 			exit(0);
 		}
 		else if (board[0][2] == board[1][1] && board[1][1] == board[2][0]) {
 			winner = board[0][2];
 			if (winner == p1sign) {
-				cout << "The winner is Player 2";
+				cout << "The winner is Player 1";
 			}
 			else {
-				cout << "The winner is Player 1";
+				cout << "The winner is Player 2";
 			}
 			exit(0);
 		}
